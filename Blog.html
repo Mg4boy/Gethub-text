@@ -1,0 +1,91 @@
+<!doctype html>
+<html> 
+ <head> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+       margin:0; padding:0; box-sizing:border-box;}
+     body{
+       background-color:#383957;}
+      
+    form input {
+       width:100%;
+       height:45px;
+       border:1px solid #ccc;
+       padding-left:10px;
+       margin :10px; 
+       border-radius:10px;
+       Outline:0;
+    }
+   
+   form{
+        background-color:white;
+        max-width:500px;
+        width:70%;
+        padding:20px;
+        position:absolute;
+        left:50%; 
+        top:50%;
+        transform:translate(-50%,-50%);
+       }
+      
+      form button {
+       width:103%;
+       height:30px;
+       cursor:pointer;
+       background:#383957;
+       color:white;
+       border:0;
+       border-radius:20px;
+       transition:1s;
+       }
+      
+      div input {
+        width:5%;
+        height:15px;
+      }
+     
+     div label{
+       width:100%;
+       height:50px;
+     }
+     </style></head> 
+ <body> 
+  <form> 
+   <h1>Preeche o formulario</h1> 
+   <br> 
+   <br> 
+   <h3>seus dados pessoais </h3> 
+   <input type="text" name="first name" placeholder="primeiro nome" required> 
+   <input type="text" name="surname" placeholder="Apelido" required> 
+   <input type="text" name="household" placeholder="Morada" required> 
+   <input type="text" name="state" placeholder="estado" required> 
+   <input type="number" name="Birthdate" placeholder="19/01/22" required> 
+   <div> 
+    <p>sexo</p> 
+    <input type="radio" id="feminino" name="género" value="feminino" required> <label for="feminino">feminino</label> 
+    <input type="radio" id="masculino" name="género" value="masculino" required> <label for="masculino">Masculino</label> 
+   </div> 
+   <br> 
+   <br> 
+   <h3>contactos</h3> 
+   <input type="num" name="phone number" placeholder="numero de telefone" required> 
+   <input type="text" name="imail" placeholder="seu email" required> <button>enviar</button>
+   <div>
+   <label for="lic">aceito os <br>
+     <b>termos de uso</b>
+     e a <br> 
+     <b>política de privacidade</b> <input type="checkbox" name="lic" id="lic" required>
+   </label></div>
+  </form> 
+ 
+<script type="text/javascript" id="dcoder_script">var email=document.getElementByid('email');
+    email.addeventlistener ('focus', ()=>{
+    e-mail.style.bordercolor="#4A5F6A";
+});
+
+  function showloading(){
+     alert ('Loading');
+  }
+
+ function hideloading(){
+   
+ }</script></body></html>
